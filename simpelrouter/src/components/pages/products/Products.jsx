@@ -4,7 +4,8 @@ import { NavLink, Outlet, useOutlet, useParams } from 'react-router-dom'
 
 
 export const Products = () => {
-    
+    const params = useParams()
+    console.log(params);
     const outlet = useOutlet()
     return outlet || <Productinfo />
 }
